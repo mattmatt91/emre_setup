@@ -44,7 +44,7 @@ date_string = datetime.now().strftime("%m-%d-%Y_%H-%M-%S")
 csv_filename = f"{date_string}_sensordata.csv"
 df = pd.DataFrame(data, columns=['Timestamp', 'CO2 ppm'])
 print(df)
-df.to_csv(f'{date_string}_data.csv', index=False, decimal=',', sep=';')
+df.to_csv(f'data\\{date_string}_data.csv', index=False, decimal=',', sep=';')
 
 
 print(f"Data saved to {csv_filename}")
